@@ -1,2 +1,6 @@
 tag @s add trophy_nether
-give @s minecraft:player_head[minecraft:item_name="'Trophy - Nether'",minecraft:note_block_sound="minecraft:particle.soul_escape",minecraft:profile={properties:[{name: "textures",value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTliOTRlNWFkOTNkYzdhZGY1OTAwNTZkNGExZTAzNDA5MjUzZGZlY2ZjODhlODMxNTQxYzhkZjU0ZmYwNWNhNiJ9fX0="}]}] 1
+give @s minecraft:player_head[minecraft:item_name="Trophy - Nether",minecraft:note_block_sound="minecraft:particle.soul_escape",minecraft:profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTliOTRlNWFkOTNkYzdhZGY1OTAwNTZkNGExZTAzNDA5MjUzZGZlY2ZjODhlODMxNTQxYzhkZjU0ZmYwNWNhNiJ9fX0="}]},minecraft:custom_data={trophy:"trophy_nether",lore:false}] 1
+
+# Store the slot of only the unlabelled (new) trophy to avoid modifying other players' trophies
+execute store result score @s ItemSlot run data get entity @s Inventory[{id:"minecraft:player_head",components:{"minecraft:custom_data":{trophy:"trophy_nether",lore:false}}}].Slot
+function qfe:universal/add_trophy_lore_by_slot
