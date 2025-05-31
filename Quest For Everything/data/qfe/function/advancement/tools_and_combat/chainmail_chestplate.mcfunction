@@ -1,1 +1,2 @@
 function qfe:universal/handle_item_obtained {'section':'tools_and_combat', 'name':'chainmail_chestplate', 'item':'minecraft:chainmail_chestplate'}
+function qfe:universal/handle_item_lore_simple {'item':'minecraft:chainmail_chestplate'}

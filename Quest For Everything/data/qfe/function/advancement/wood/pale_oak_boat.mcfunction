@@ -1,1 +1,2 @@
 function qfe:universal/handle_item_obtained {'section':'wood', 'name':'pale_oak_boat', 'item':'minecraft:pale_oak_boat'}
+function qfe:universal/handle_item_lore_simple {'item':'minecraft:pale_oak_boat'}

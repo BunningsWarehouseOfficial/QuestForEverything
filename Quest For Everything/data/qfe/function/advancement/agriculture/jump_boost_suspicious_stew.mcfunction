@@ -1,1 +1,7 @@
 function qfe:universal/handle_item_obtained {'section':'agriculture', 'name':'jump_boost_suspicious_stew', 'item':'minecraft:suspicious_stew[minecraft:suspicious_stew_effects=[{"id": "minecraft:jump_boost", "duration": 100}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:jump_boost", "duration": 140}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:jump_boost", "duration": 160}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:jump_boost", "duration": 180}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:jump_boost", "duration": 200}]]'}
+
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:jump_boost", "duration": 100}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:jump_boost", "duration": 140}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:jump_boost", "duration": 160}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:jump_boost", "duration": 180}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:jump_boost", "duration": 200}]'}

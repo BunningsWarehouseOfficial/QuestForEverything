@@ -1,1 +1,2 @@
 function qfe:universal/handle_item_obtained {'section':'tools_and_combat', 'name':'water_bucket', 'item':'minecraft:water_bucket'}
+function qfe:universal/handle_item_lore_simple {'item':'minecraft:water_bucket'}

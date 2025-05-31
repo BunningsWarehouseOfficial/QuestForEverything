@@ -1,8 +1,8 @@
-##Set Players To Creative & Teleports Them To 0 0
+## Set Players To Creative & Teleports Them To 0 0
 gamemode creative @a
 teleport @a 0 128 0
 
-##Set Gamerules & Scoreboard
+## Set Gamerules & Scoreboard
 gamerule commandBlockOutput false
 gamerule disableRaids true
 gamerule doDaylightCycle false
@@ -80,17 +80,17 @@ data modify storage qfe:storage/info section_names set value {agriculture:{secti
 
 # data modify storage qfe:section_counts SectionItemCount.SectionCounts set value {agriculture: 63, brewing: 178, end: 35, manufactured: 103, nature_and_loot: 151, nether: 96, ocean: 61, redstone_and_transport: 35, resources: 84, sand_and_glass: 57, stone: 70, terracotta_and_concrete: 65, tools_and_combat: 88, wood: 171, wool: 64}
 
+## Item Lore Setup
 scoreboard objectives add ItemSlot dummy "Item Slot"
+scoreboard objectives add ItemFound dummy "Item Found"
 
-##Find Lobby Number
+## Find Lobby Number
 execute if score #lobbynumber GameSetup matches ..0 run function qfe:master/lobby/lobby_number
 
 ## Setup World Spawn/Lobby
-
 execute unless entity @e[tag=lobby_locator_bottom,tag=lobby_placed] run schedule function qfe:master/lobby/locate_lobby 2s
 
-##Teams Setup
-
+## Teams Setup
 team leave @a
 
 team add blue "Blue"
@@ -122,5 +122,5 @@ execute unless entity @e[type=marker,x=0,y=80,z=0,name="Timer"] run summon marke
 
 execute as @e[tag=lobby_locator_bottom] at @e[tag=lobby_locator_bottom] run setworldspawn ~ ~1 ~
 
-##Teleports Players Into Lobby
+## Teleports Players Into Lobby
 teleport @a 0 100 0

@@ -1,1 +1,6 @@
 function qfe:universal/handle_item_obtained {'section':'agriculture', 'name':'saturation_suspicious_stew', 'item':'minecraft:suspicious_stew[minecraft:suspicious_stew_effects=[{"id": "minecraft:saturation", "duration": 7}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:saturation", "duration": 8}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:saturation", "duration": 9}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:saturation", "duration": 10}]]'}
+
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:saturation", "duration": 7}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:saturation", "duration": 8}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:saturation", "duration": 9}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:saturation", "duration": 10}]'}

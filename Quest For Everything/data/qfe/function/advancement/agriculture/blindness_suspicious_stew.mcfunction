@@ -1,1 +1,6 @@
 function qfe:universal/handle_item_obtained {'section':'agriculture', 'name':'blindness_suspicious_stew', 'item':'minecraft:suspicious_stew[minecraft:suspicious_stew_effects=[{"id": "minecraft:blindness", "duration": 100}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:blindness", "duration": 120}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:blindness", "duration": 140}]|minecraft:suspicious_stew_effects=[{"id": "minecraft:blindness", "duration": 220}]]'}
+
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:blindness", "duration": 100}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:blindness", "duration": 120}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:blindness", "duration": 140}]'}
+function qfe:universal/handle_item_lore_advanced {'item':'minecraft:suspicious_stew', 'components':'"minecraft:suspicious_stew_effects":[{"id": "minecraft:blindness", "duration": 220}]'}
