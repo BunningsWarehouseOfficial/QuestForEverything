@@ -21,8 +21,8 @@ scoreboard players set naturalRegeneration GameSetup 1
 scoreboard players set announceAdvancements GameSetup 1
 scoreboard players set announceTrophies GameSetup 1
 scoreboard players set keepInventory GameSetup 0
-scoreboard players set takeItems GameSetup 1
-scoreboard players set showTimer GameSetup 1
+scoreboard players set takeItems GameSetup 0
+scoreboard players set showTimer GameSetup 0
 scoreboard players set #gamestarted GameSetup 0
 scoreboard players set #gameended GameSetup 0
 scoreboard players set #dragon_egg GameSetup 0
