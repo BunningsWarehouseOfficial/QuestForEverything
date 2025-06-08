@@ -67,10 +67,6 @@ scoreboard objectives add player_time dummy "Player Timer"
 scoreboard objectives add player_seconds dummy "Player Seconds"
 scoreboard objectives add player_minutes dummy "Player Minutes"  
 scoreboard objectives add player_hours dummy "Player Hours"
-scoreboard players set @a player_time 0
-scoreboard players set @a player_seconds 0
-scoreboard players set @a player_minutes 0
-scoreboard players set @a player_hours 0
 
 scoreboard objectives add agriculture_score dummy "Agriculture Score"
 scoreboard objectives add brewing_score dummy "Brewing Score"

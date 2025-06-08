@@ -14,6 +14,12 @@ gamerule fallDamage true
 gamerule doWeatherCycle true
 scoreboard players reset @a score
 
+##Reset Player Timers
+scoreboard players set @a player_time 0
+scoreboard players set @a player_seconds 0
+scoreboard players set @a player_minutes 0
+scoreboard players set @a player_hours 0
+
 ##Executes & Activates Chosen The Game Setups
 execute if score naturalRegeneration GameSetup matches 0 run gamerule naturalRegeneration false
 execute if score keepInventory GameSetup matches 1 run gamerule keepInventory true
