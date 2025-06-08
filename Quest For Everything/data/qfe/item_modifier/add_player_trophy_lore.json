@@ -1,0 +1,103 @@
+[
+    {
+        "function": "minecraft:set_custom_data",
+        "tag": {
+            "lore": true
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "\u2580",
+                    "color": "#944d00"
+                },
+                {
+                    "text": "\u2584",
+                    "color": "#ffa218"
+                },
+                {
+                    "text": "\u2580",
+                    "color": "#ffc352"
+                },
+                {
+                    "text": "\u2584",
+                    "color": "#ffd68a"
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "selector": "@s",
+                    "color": "#ffd68a",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "\u2584",
+                    "color": "#ffd68a"
+                },
+                {
+                    "text": "\u2580",
+                    "color": "#ffc352"
+                },
+                {
+                    "text": "\u2584",
+                    "color": "#ffa218"
+                },
+                {
+                    "text": "\u2580",
+                    "color": "#944d00"
+                }
+            ],
+            [
+                {
+                    "text": "Obtained in ",
+                    "color": "gray"
+                },
+                {
+                    "text": "",
+                    "color": "gray"
+                },
+                {
+                    "score": {
+                        "objective": "player_hours",
+                        "name": "*"
+                    },
+                    "color": "gray"
+                },
+                {
+                    "text": "h ",
+                    "color": "gray"
+                },
+                {
+                    "score": {
+                        "objective": "player_minutes",
+                        "name": "*"
+                    },
+                    "color": "gray"
+                },
+                {
+                    "text": "m ",
+                    "color": "gray"
+                },
+                {
+                    "score": {
+                        "objective": "player_seconds",
+                        "name": "*"
+                    },
+                    "color": "gray"
+                },
+                {
+                    "text": "s",
+                    "color": "gray"
+                }
+            ]
+        ],
+        "mode": "append"
+    }
+]

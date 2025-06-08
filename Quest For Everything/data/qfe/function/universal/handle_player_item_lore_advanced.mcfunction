@@ -5,5 +5,4 @@ $execute store success score @s ItemFound run data get entity @s Inventory[{id:'
 $execute if score @s ItemFound matches 1 store result score @s ItemSlot run data get entity @s Inventory[{id:'$(item)',components:{$(components)}}].Slot
 
 # When not takeItems and item was found, add player name and playtime lore to the item in the determined slot
-execute if score takeItems GameSetup matches 0 if score @s ItemFound matches 1 if score playerLore GameSetup matches 1 run function qfe:universal/add_player_item_lore_by_slot
-execute if score takeItems GameSetup matches 0 if score @s ItemFound matches 1 if score playerLore GameSetup matches 0 run function qfe:universal/add_item_lore_by_slot
+execute if score takeItems GameSetup matches 0 if score @s ItemFound matches 1 run function qfe:universal/add_player_item_lore_by_slot

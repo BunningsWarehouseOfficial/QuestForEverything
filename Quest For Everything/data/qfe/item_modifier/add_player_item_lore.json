@@ -1,0 +1,53 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        [
+            {
+                "selector": "@s",
+                "bold": true,
+                "color": "#ffd68a"
+            }
+        ],
+        [
+            {
+                "text": "",
+                "color": "#ffd68a"
+            },
+            {
+                "score": {
+                    "objective": "player_hours",
+                    "name": "*"
+                },
+                "color": "#ffd68a"
+            },
+            {
+                "text": "h ",
+                "color": "#ffd68a"
+            },
+            {
+                "score": {
+                    "objective": "player_minutes",
+                    "name": "*"
+                },
+                "color": "#ffd68a"
+            },
+            {
+                "text": "m ",
+                "color": "#ffd68a"
+            },
+            {
+                "score": {
+                    "objective": "player_seconds",
+                    "name": "*"
+                },
+                "color": "#ffd68a"
+            },
+            {
+                "text": "s",
+                "color": "#ffd68a"
+            }
+        ]
+    ],
+    "mode": "append"
+}

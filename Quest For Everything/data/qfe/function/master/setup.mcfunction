@@ -24,6 +24,7 @@ scoreboard players set keepInventory GameSetup 0
 scoreboard players set takeItems GameSetup 0
 scoreboard players set showTimer GameSetup 0
 scoreboard players set syncDragonEgg GameSetup 1
+scoreboard players set playerLore GameSetup 1
 scoreboard players set #gamestarted GameSetup 0
 scoreboard players set #gameended GameSetup 0
 scoreboard players set #dragon_egg GameSetup 0
@@ -37,6 +38,7 @@ scoreboard players display name keepInventory GameSetup "Keep Inventory"
 scoreboard players display name takeItems GameSetup "Take Items"
 scoreboard players display name showTimer GameSetup "Show Timer"
 scoreboard players display name syncDragonEgg GameSetup "Sync Dragon Egg"
+scoreboard players display name playerLore GameSetup "Player-Specific Lore"
 
 scoreboard objectives add death deathCount "Deaths"
 scoreboard objectives setdisplay list death
@@ -50,6 +52,7 @@ scoreboard objectives add SyncScore dummy "Sync Score"
 
 scoreboard objectives add teams trigger "Teams"
 
+# Server-wide time tracking scores
 scoreboard objectives add time dummy "Timer"
 scoreboard players set const100000 time 100000
 scoreboard players set const100 time 100
@@ -58,6 +61,16 @@ scoreboard players set seconds time 0
 scoreboard players set minutes time 0
 scoreboard players set hours time 0
 scoreboard players set trackedminutes time 0
+
+# Individual player time tracking scoreboards
+scoreboard objectives add player_time dummy "Player Timer"
+scoreboard objectives add player_seconds dummy "Player Seconds"
+scoreboard objectives add player_minutes dummy "Player Minutes"  
+scoreboard objectives add player_hours dummy "Player Hours"
+scoreboard players set @a player_time 0
+scoreboard players set @a player_seconds 0
+scoreboard players set @a player_minutes 0
+scoreboard players set @a player_hours 0
 
 scoreboard objectives add agriculture_score dummy "Agriculture Score"
 scoreboard objectives add brewing_score dummy "Brewing Score"

@@ -3,4 +3,5 @@ give @s minecraft:player_head[minecraft:item_name="Trophy - Ocean",minecraft:not
 
 # Store the slot of only the unlabelled (new) trophy to avoid modifying other players' trophies
 execute store result score @s ItemSlot run data get entity @s Inventory[{id:"minecraft:player_head",components:{"minecraft:custom_data":{trophy:"trophy_ocean",lore:false}}}].Slot
-function qfe:universal/add_trophy_lore_by_slot
+execute if score playerLore GameSetup matches 1 run function qfe:universal/add_player_trophy_lore_by_slot
+execute if score playerLore GameSetup matches 0 run function qfe:universal/add_trophy_lore_by_slot
